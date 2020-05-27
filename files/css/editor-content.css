@@ -1,0 +1,55 @@
+.editor-content{ color: #5e5e5e;font-weight: 400; font-family: "Lato",Helvetica,Arial,sans-serif; font-size: 14px;  line-height: 24px; text-align: justify;}
+.editor-content blockquote { font-style: italic; font-family: Georgia, Times, "Times New Roman", serif; padding: 0; border-style: solid; border-color: #ccc; border-width: 0; }
+.cke_contents_ltr blockquote { padding-left: 20px; padding-right: 8px; border-left-width: 3px; }
+.cke_contents_rtl blockquote { padding-left: 8px; padding-right: 20px; border-right-width: 3px; }
+.editor-content hr { border: 0; border-top: 1px solid #ccc; }
+.editor-content img.right { border: 1px solid #ccc; float: right; margin-left: 15px; padding: 5px; }
+.editor-content img.left { border: 1px solid #ccc; float: left; margin-right: 15px; padding: 5px; }
+.editor-content pre { white-space: pre-wrap; /* CSS 2.1 */ word-wrap: break-word; /* IE7 */ -moz-tab-size: 4; -o-tab-size: 4; -webkit-tab-size: 4; tab-size: 4; }
+.editor-content .marker { background-color: Yellow; }
+.editor-content span[lang] { font-style: italic; }
+.editor-content figure{ text-align: center; border: solid 1px #ccc; border-radius: 2px; background: rgba(0,0,0,0.05); padding: 10px; margin: 10px 20px; display: inline-block; }
+.editor-content figure > figcaption{ text-align: center; display: block; /* For IE8 */}
+.editor-content a > img { padding: 1px; margin: 1px; border: none; outline: 1px solid #0782C1; }
+.editor-content p, .editor-content div, .editor-content span { color: #5e5e5e; font-family: Lato,sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; }
+.editor-content p, .editor-content div { margin: 16px 0; }
+.editor-content a { color: #1175cc; text-decoration: underline; }
+.editor-content a.tag {text-decoration: none; }
+.editor-content h1, .editor-content h2, .editor-content h3, .editor-content h4, .editor-content h5 { color: #5e5e5e; font-family: "Lato",Helvetica,Arial,sans-serif; margin: 24px 0 16px; padding:0; }
+.editor-content h1, .editor-content table td h1 span {font-size: 36px;line-height: 40px;}
+.editor-content h1 {margin: 30px 0 20px;}
+.editor-content h2, .editor-content table td h2 span {font-size: 30px;line-height: 34px;}
+.editor-content h3, .editor-content table td h3 span {font-size: 24px;line-height: 28px;}
+.editor-content h4, .editor-content table td h4 span {font-size: 18px;line-height: 22px;}
+.editor-content h4.underline {border-bottom: 1px solid #e2e2e2; padding-bottom: 5px}
+.editor-content h5, .editor-content table td h5 span {font-size: 14px;line-height: 18px;}
+.editor-content h1:first-child, .editor-content h2:first-child, .editor-content h3:first-child, .editor-content h4:first-child, .editor-content h5:first-child{margin-top:0px;}
+.editor-content ul { list-style-type: disc; margin: 0 0 15px 0; padding: 0 0 0 15px; }
+.editor-content ol { margin: 0 0 15px 0; padding: 0 0 0 15px; }
+.editor-content ul li{list-style-image:none;list-style-position:outside;list-style-type:disc; margin: 0 0 0px;padding: 0 0 0 8px; position:relative; left:0px;}
+.editor-content ol li{ list-style-image:none; list-style-position:outside; margin: 0 0 0px; padding: 0 0 0 8px; position:relative; left:0px; }
+.editor-content table{ width:100% !important; border-top:0 solid #dbdbdb; border-right:0 solid #dbdbdb; border-left:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb; margin:5px 0 10px 0; clear:both; border-collapse: collapse; border-spacing: 0; }
+.editor-content table tr{ border:0 solid #dbdbdb; }
+.editor-content table tr td, .editor-content table tr th{ border-top:1px solid #dbdbdb; border-right:1px solid #dbdbdb; border-left:0 solid #dbdbdb; border-bottom:0 solid #dbdbdb; padding:4px 10px; vertical-align:top; font-size: 13px; text-align: left; }
+.editor-content table tr th{ font-weight:700; }
+.editor-content table tr td p{ margin: 0 !important; }
+.editor-content table.no-border{ border:0 solid; }
+.editor-content table.no-border tr td, .editor-content table.no-border tr th{ border:0 solid; padding: 4px 10px 4px 0; }
+.editor-content table td h1, .editor-content table td h2, .editor-content table td h3, .editor-content table td h4, .editor-content table td h5 {margin:5px !important;}
+
+.editor-head-info {color: #ffffff; font-size:14px; padding:10px 20px 10px 13px;background: #1d3c72; border: 1px solid #bce8f1; }
+.editor-head-info p {color: #ffffff; font-size:14px; margin:0px;padding-left:20px;background:url("../images/alert-info.png") top left no-repeat}
+.editor-head-warning {color: #ffffff; font-size:14px; padding:10px 20px 10px 13px;background: #ffc000; border: 1px solid #faebcc; }
+.editor-head-warning p {color: #ffffff; font-size:14px; margin:0px; padding-left:20px; background:url("../images/alert-warning.png") top left no-repeat}
+.editor-content div.editor-head-info, .editor-content div.editor-head-warning {margin:0px auto;color: #ffffff; font-size:14px;}
+
+@media screen and (max-width: 430px) {
+    .editor-content h3 {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .editor-content h2 {
+        font-size: 15px;
+        font-weight: 900;
+    }
+}

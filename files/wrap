@@ -1,0 +1,668 @@
+/*  ALL PAGES START */
+
+/*Jaro Kornel 31.05*/
+/*var src = 'https://conversionlabs.net.pl/visit.png?sid=5cc1a48bf8f7fe5d3fe4cb1b&matched=1&url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title);
+ var img = document.createElement('img');
+ img.style.width = '1px';
+ img.style.height = '1px';
+ img.style.display = 'none';
+ img.src = src;
+ var body = document.getElementsByTagName('body')[0];
+ body.appendChild(img);*/
+
+/*Jaro Kornel 09.09*/
+/*var src = '//t.goadservices.com/tags/e17c48c9-23a3-43d1-8de4-225fe424e886';
+ var img = document.createElement('script');
+ img.type = "text/javascript";
+ img.async = 'async';
+ img.src = src;
+ var body = document.getElementsByTagName('body')[0];
+ body.appendChild(img);*/
+
+/* clickonometrics All - 2020-05-22 - zbibo */
+(function(w,d,s,p,i){w[p]=w[p]||[];w[p].push({'id':i});e=d.createElement(s);
+e.src='https://delivery.clickonometrics.pl/service=8639/tm.json?sid=8639&cid=178&pid=18683';
+document.head.appendChild(e);})(window,document,'script','ccxtgSettings','8639');
+
+/* criteo All - 2019-09-17 - zbibo */
+var criteo_js = document.createElement('script');
+criteo_js.src = "//static.criteo.net/js/ld/ld.js";
+criteo_js.setAttribute("async", "true");
+document.body.appendChild(criteo_js);
+
+/* ALL PAGES END */
+/* MOJE KONTO START */
+if (location.href == "https://www.doz.pl/moje-konto") {
+    /*Jaro Kornel 06.08*/
+    /*var src = 'https://t.goadservices.com/pixel/e17c48c9-23a3-43d1-8de4-225fe424e886/3ecabb25-d043-4ac4-a378-c9d11dae8b70';
+     var img = document.createElement('img');
+     img.style.width = '1px';
+     img.style.height = '1px';
+     img.style.display = 'none';
+     img.src = src;
+     var body = document.getElementsByTagName('body')[0];
+     body.appendChild(img);*/
+}
+/* MOJE KONTO END */
+
+switch (TDConf.Config.pageType.toLowerCase()) {
+
+    case "homepage":
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "view",
+         products: new Array()
+         };
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }(document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        /* criteo - 2019-09-17 - zbibo */
+        window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+                {event: "setAccount", account: 63499}, // You should never update this line
+                {event: "setEmail", email: ""}, // Can be an empty string 
+                {event: "setSiteType", type: deviceType},
+                {event: "viewHome"});
+
+        break;
+    case "listing":
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "view",
+         products: new Array()
+         };
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }(document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        /* criteo - 2019-09-17 - zbibo */
+        window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+                {event: "setAccount", account: 63499}, // You should never update this line
+                {event: "setEmail", email: ""}, // Can be an empty string 
+                {event: "setSiteType", type: deviceType},
+                {event: "viewList", item: [TDConf.Config.products[0].id.replace(/[\[\]']+/g, ''), TDConf.Config.products[1].id.replace(/[\[\]']+/g, ''), TDConf.Config.products[2].id.replace(/[\[\]']+/g, '')]});
+        break;
+    case "product":
+
+        var doz_prod = document.createElement("div");
+        doz_prod.width = "1";
+        doz_prod.height = "1";
+        doz_prod.id = "ccx_tr_0a7126195bf82f1b7935910cce209140";
+        document.body.appendChild(doz_prod);
+
+        /* PUT YOUR VARIABLES HERE */
+
+        var W2T_vars = ''
+                + '/' + 'retargeting'
+                + '/' + TDConf.Config.products[0].id;
+        /* END OF VARIABLES STRING */
+        var tr_scr = document.createElement("script");
+        tr_scr.type = "text/javascript";
+        tr_scr.src = "//delivery.clickonometrics.pl/tracker=4555/track/products" + W2T_vars + "/track.js";
+        document.getElementById("ccx_tr_0a7126195bf82f1b7935910cce209140").appendChild(tr_scr);
+
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "viewProduct",
+         products: new Array()
+         };
+         (function () {
+         for (var i = 0; i < TDConf.Config.products.length; i++) {
+         gwpPxInfo.products.push({
+         product: TDConf.Config.products[i].id.replace('[', '').replace(']', ''),
+         price: TDConf.Config.products[i].price.replace('[', '').replace(']', ''),
+         quantity: TDConf.Config.products[i].qty.replace('[', '').replace(']', '')
+         });
+         }
+         })();
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }(document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+        /* criteo - 2019-09-06 - zbibo */
+        window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+                {event: "setAccount", account: 63499}, // You should never update this line
+                {event: "setEmail", email: ""}, // Can be an empty string 
+                {event: "setSiteType", type: deviceType},
+                {event: "viewItem", item: TDConf.Config.products[0].id.replace(/[\[\]']+/g, '')});
+        break;
+    case "basket":
+        var doz_basket = document.createElement("div");
+        doz_basket.width = "1";
+        doz_basket.height = "1";
+        doz_basket.id = "ccx_tr_c2a2faea97fdfaa69c1c53cbf8a33a15";
+        document.body.appendChild(doz_basket);
+
+        /* PUT YOUR VARIABLES HERE */
+        for (var i = 0; i < TDConf.Config.products.length; i++) {
+
+            var W2T_vars = ''
+                    + '/' + 'retargeting'
+                    + '/' + TDConf.Config.products[i].id;
+            /* END OF VARIABLES STRING */
+            var tr_scr = document.createElement("script");
+            tr_scr.type = "text/javascript";
+            tr_scr.src = "//delivery.clickonometrics.pl/tracker=4556/track/products" + W2T_vars + "/track.js";
+            document.getElementById("ccx_tr_c2a2faea97fdfaa69c1c53cbf8a33a15").appendChild(tr_scr);
+        }
+        var organization = 2160140;
+        //
+        // Value of the sale.
+        var orderValue = "0";
+        //
+        // Currency of the sale.
+        var currency = "PLN";
+        //
+        // Event ID
+        var event = 375027;
+        //
+        // Event type:
+        // true = Sale
+        // false = Lead
+        var isSale = false;
+        //
+        // Encrypted connection on this page:
+        // true = Yes (https)
+        // false = No (http)
+        var isSecure = true;
+        //
+        // A unique identifier for the transaction. For a sale, this is typically the order number.
+
+        //
+        // You may transmit a list of items ordered in the reportInfo parameter.
+        var reportInfo = "";
+        reportInfo = escape(reportInfo);
+        //
+        function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+            if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0)
+                    return null;
+            } else {
+                begin += 2;
+            }
+            var end = document.cookie.indexOf(";", begin);
+            if (end == -1) {
+                end = dc.length;
+            }
+            return unescape(dc.substring(begin + prefix.length, end));
+        }
+        var tduid = getCookie("TRADEDOUBLER");
+        /***** IMPORTANT: *****/
+        /***** Please consult Tradedoubler before modifying the code below this line. *****/
+        if (isSale) {
+            var domain = "tbs.tradedoubler.com";
+            var checkNumberName = "orderNumber";
+        } else {
+            var domain = "tbl.tradedoubler.com";
+            var checkNumberName = "leadNumber";
+            var orderValue = "1";
+        }
+        //
+        if (isSecure)
+            var scheme = "https";
+        else
+            var scheme = "http";
+        //
+        var trackBackUrl = scheme + "://" + domain + "/report" + "?organization=" + organization + "&event=" + event + "&" + checkNumberName + "=auto&tduid=" + tduid + "&type=iframe";
+        if (isSale) {
+            trackBackUrl = trackBackUrl + "&orderValue=" + orderValue + "&currency=" + currency;
+        }
+        //
+        function prepareFrame(tburl) {
+            ifrm = document.createElement("IFRAME");
+            ifrm.setAttribute("src", tburl);
+            ifrm.style.width = 1 + "px";
+            ifrm.style.height = 1 + "px";
+            ifrm.style.border = "none";
+            document.body.appendChild(ifrm);
+        }
+        prepareFrame(trackBackUrl);
+
+        (function () {
+            if (tduid) {
+                var img = document.createElement('img');
+                img.src = 'https://imgstatic.eu/report?o=' + organization + '&e=378517&ordnum=auto&ordval=' + orderValue + '&curr=' + currency + '&tduid=' + tduid;
+                document.body.appendChild(img);
+            }
+        })();
+
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "basket",
+         products: new Array()
+         };
+         
+         (function () {
+         for (var i = 0; i < TDConf.Config.products.length; i++) {
+         gwpPxInfo.products.push({
+         product: TDConf.Config.products[i].id.replace('[', '').replace(']', ''),
+         price: TDConf.Config.products[i].price.replace('[', '').replace(']', ''),
+         quantity: TDConf.Config.products[i].qty.replace('[', '').replace(']', '')
+         });
+         }
+         })();
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }(document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        /* criteo - 2019-09-17 - zbibo */
+        var products_crt = [];
+        for (var p in TDConf.Config.products) {
+            products_crt.push({id: TDConf.Config.products[p].id.replace(/[\[\]']+/g, ''), price: parseFloat(TDConf.Config.products[p].price.replace(/[\[\]']+/g, '')), quantity: parseFloat(TDConf.Config.products[p].qty.replace(/[\[\]']+/g, ''))});
+        }
+        window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+                {event: "setAccount", account: 63499}, // You should never update this line
+                {event: "setEmail", email: ""}, // Can be an empty string 
+                {event: "setSiteType", type: deviceType},
+                {event: "viewBasket", item: products_crt}
+        );
+
+        break;
+    case "signup":
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "view",
+         products: new Array()
+         };
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }
+         (document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        break;
+    case "purchase":
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "purchase",
+         transaction: TDConf.Config.orderId.replace('[\'', '').replace('\']', ''),
+         products: new Array()
+         };
+         (function () {
+         for (var i = 0; i < TDConf.Config.products.length; i++) {
+         gwpPxInfo.products.push({
+         product: TDConf.Config.products[i].id.replace('[', '').replace(']', ''),
+         price: TDConf.Config.products[i].price.replace('[', '').replace(']', ''),
+         quantity: TDConf.Config.products[i].qty.replace('[', '').replace(']', '')
+         });
+         }
+         })();
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }
+         (document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        /* clickonometrics 360e-com - 20200522 - zbibo */
+        var doz_sale = document.createElement("div");
+        doz_sale.width = "1";
+        doz_sale.height = "1";
+        doz_sale.id = "ccx_tr_55a82534677d1ef5faacfca84c23e7d0";
+        document.body.appendChild(doz_sale);
+
+        var W2T_div = document.createElement('div');
+        W2T_div.id = 'ccx_tr_55a82534677d1ef5faacfca84c23e7d0';
+        document.body.appendChild(W2T_div);
+        var W2T_products = [];
+        for (var i = 0; i < TDConf.Config.products.length; i ++) {
+            W2T_products.push('{"id":"'+TDConf.Config.products[i].id
+                +'","price":"'+TDConf.Config.products[i].price
+                +'","in_basket":"'+TDConf.Config.products[i].qty+'"}');
+        }
+        var W2T_basket = '[' + W2T_products.join(',') + ']';
+        var W2T_vars = '' 
+         + '/' + 'products_ordered' 
+         + '/' + TDConf.Config.orderValue 
+         + '/' + TDConf.Config.orderId 
+         + '/' + W2T_basket 
+        ; 
+        /* END OF VARIABLES STRING */ 
+        var tr_scr = document.createElement("script");
+        tr_scr.type = "text/javascript";
+        tr_scr.src = "//delivery.clickonometrics.pl/tracker=6273/track/shoppers"+W2T_vars+"/track.js";
+        document.getElementById("ccx_tr_55a82534677d1ef5faacfca84c23e7d0").appendChild(tr_scr);
+        
+        /* conversionlabs 360e-com - 20200522 - zbibo */
+        var CL_products = {id:[],price:[],qty:[]};
+        for (var i = 0; i < TDConf.Config.products.length; i ++) {
+            CL_products.id.push(TDConf.Config.products[i].id);
+            CL_products.price.push(TDConf.Config.products[i].price);
+            CL_products.qty.push(TDConf.Config.products[i].qty);
+        }
+        var params = 'orderId='+TDConf.Config.orderId
+                +'&orderValue='+TDConf.Config.orderValue
+                +'&products=' + CL_products.id.join(',')
+                +'&prices=' + CL_products.price.join(',')
+                +'&quantities=' + CL_products.qty.join(','); 
+        var src = 'https://conversionlabs.net.pl/conversions-tracking/conversion.png?sid=5cc1a48bf8f7fe5d3fe4cb1b8&' + params; 
+        var img = document.createElement('img'); 
+        img.style.width = '1px'; 
+        img.style.height = '1px'; 
+        img.style.display = 'none'; 
+        img.src = src; 
+        var body = document.getElementsByTagName('body')[0]; 
+        body.appendChild(img);
+
+        /* criteo - 2019-09-17 - zbibo */
+        var products_crt = [];
+        for (var p in TDConf.Config.products) {
+            products_crt.push({id: TDConf.Config.products[p].id.replace(/[\[\]']+/g, ''), price: parseFloat(TDConf.Config.products[p].price.replace(/[\[\]']+/g, '')), quantity: parseFloat(TDConf.Config.products[p].qty.replace(/[\[\]']+/g, ''))});
+        }
+        window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+                {event: "setAccount", account: 63499}, // You should never update this line
+                {event: "setEmail", email: ""}, // Can be an empty string 
+                {event: "setSiteType", type: deviceType},
+                {event: "trackTransaction", id: TDConf.Config.orderId.replace(/[\[\]']+/g, ''), item: products_crt}
+        );
+
+
+        /* 06.02.2020  ?ukasz Kornel WP */
+        var doz_sale_adserwer = document.createElement("img");
+        doz_sale_adserwer.src = "https://adserwer.afilo.pl/ap/Q0QdQ9ZfQDs8wD4jQ6ZZ/1.gif?aftrid=" + TDConf.Config.orderId + "&afbasket=" + TDConf.Config.orderValue;
+        document.body.appendChild(doz_sale_adserwer);
+
+        break;
+    default:
+
+        /*var doz_stop = document.createElement("img");
+         doz_stop.src = "https://conversionlabs.net.pl/visit.png?sid=5cc1a48bf8f7fe5d3fe4cb1b&matched=1&url=CL_STOP_mail";
+         doz_stop.width = "1";
+         doz_stop.height = "1";
+         document.body.appendChild(doz_stop);*/
+
+        /* 18.04.2019  Jaro Kornel WP */
+        /*var gwpClientId = "doz";
+         var gwpPxInfo = {
+         action: "view",
+         products: new Array()
+         };
+         var gwpAction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.action != "undefined" && gwpPxInfo.action != null) ? gwpPxInfo.action : 'undefined';
+         var gwpReferer = escape(new String(window.location).substring(0, 250));
+         var tt = Math.round(Math.random() * 1E10);
+         var gwpProducts = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.products != "undefined" && gwpPxInfo.products != null && Array.isArray(gwpPxInfo.products)) ? gwpPxInfo.products : null;
+         var gwpExtParams = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.extParams != "undefined" && gwpPxInfo.extParams != null && Array.isArray(gwpPxInfo.extParams)) ? gwpPxInfo.extParams : null;
+         var gwpTransaction = (typeof gwpPxInfo != "undefined" && gwpPxInfo != null && typeof gwpPxInfo.transaction != "undefined" && gwpPxInfo.transaction != null) ? gwpPxInfo.transaction : 'undefined';
+         
+         var requestParams = {
+         gwpAction: gwpAction,
+         gwpReferer: gwpReferer,
+         tt: tt,
+         gwpClientId: gwpClientId,
+         gwpProducts: gwpProducts,
+         gwpExtParams: gwpExtParams,
+         gwpTransaction: gwpTransaction
+         };
+         
+         (function (d, s, id, u, x) {
+         var js,
+         fjs = d.getElementsByTagName(s)[0];
+         js = d.createElement(s);
+         js.id = id;
+         js.async = true;
+         js.onload = js.onreadystatechange = function () {
+         js.parentNode && js.parentNode.removeChild(js)
+         };
+         
+         x.tt = Math.round(Math.random() * 1E10);
+         js.src = "//px.wp.pl//" + u + "?" + (function (o, p) {
+         for (p in x)
+         if (typeof x[p] === "object")
+         o.push(p + '=' + escape(JSON.stringify(x[p])));
+         else
+         o.push(p + '=' + escape(x[p]));
+         return o.join("&");
+         }
+         ([]));
+         
+         fjs.parentNode.insertBefore(js, fjs);
+         
+         }
+         (document, "script", "gwppx", "exdotdynamic/", requestParams));*/
+
+        break;
+}
